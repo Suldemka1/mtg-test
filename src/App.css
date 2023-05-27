@@ -1,0 +1,57 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.review__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(18, 18, 187, 0.53);
+  border-radius: 15px 15px 0 0;
+
+  padding: 0 10px;
+}
+
+.review .review__body {
+  padding: 0 10px;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content__logo {
+  display: flex;
+  gap: 10px;
+}
+
+.header__content select {
+  border-radius: 5px;
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.header__content select option {
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .review__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
